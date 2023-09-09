@@ -10,9 +10,6 @@ import java.util.Map;
 
 @Mapper
 public interface RecordMapper extends BaseMapper<Record> {
-    @Select("SELECT t.termId, t.termName, COUNT(r.termId) as sum " +
-            "FROM terms t LEFT OUTER " +
-            "JOIN records r ON t.termId = r.termId " +
-            "GROUP BY t.termId, t.termName")
+    @Select("CALL GetTermSum()")
     List<Map<String, Object>> CountByTerms();
 }

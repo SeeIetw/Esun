@@ -1,6 +1,7 @@
 server:
   port: 8080
 
+# Database configuration
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
