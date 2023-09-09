@@ -6,4 +6,4 @@
 其中 mybatis-plus 框架透過繼承 BaseMapper 類別來完成簡易的 CRUD 以及防範 SQL injection，可以從 log 中看到。
 由於簡易 CRUD 都被繼承了，我只需要實作一個 Stored Procedure。
 
-3.Database Configuration 在 Esunapi/src/main/resources 資料夾中的 application.yml 可以設定。
+3.資料庫則使用了 MySQL，其中資料庫設定可以在 Esunapi/src/main/resources 資料夾中的 application.yml 進行更改。
